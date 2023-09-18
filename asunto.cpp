@@ -19,11 +19,12 @@ void Asunto::maarita(int asukkaat, int nelio)
 
 }
 
+
 double Asunto::laskeKulutus(double hinta)
 {
     hinto = hinta;
 
-    int Kulutus = asukasMaara * neliot * hinto;
+    double Kulutus = asukasMaara * neliot * hinto;
     cout <<"asunnon kulutus, kun hinta = " << hinto << " on " << Kulutus << endl;
 
 
