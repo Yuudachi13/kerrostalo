@@ -27,7 +27,7 @@ double Kerros::laskeKulutus2(double)
 {
     int asunnot2 = asuntomaara2;
 
-    int kokonaiskulutus2 = asunnot2 * 100 * 2;
+    int kokonaiskulutus2 = asunnot2 * as1.neliot * as1.asukasMaara;
 
     cout << "kerroksen kulutus " << kokonaiskulutus2 << endl;
 

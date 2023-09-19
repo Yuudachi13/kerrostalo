@@ -1,5 +1,5 @@
 #include "katutaso.h"
-#include "asunto.h"
+
 Katutaso::Katutaso()
 {
     cout <<"katutaso luotu"<< endl;
@@ -18,12 +18,13 @@ void Katutaso::maaritaAsunnot(int maara)
 
     as1.maarita(2,100);
     as2.maarita(2,100);
+
 }
 
-double Katutaso::laskeKulutus(double)
+double Katutaso::laskeKulutus1(double)
 {
 
   int asunnot = asuntomaara2 + asuntomaara;
-  int kokonaiskulutus = asunnot * 100 * 2;
+  int kokonaiskulutus = asunnot * as1.neliot * as1.asukasMaara;
     cout <<"katutason ja perityn kerroksen kulutus " << kokonaiskulutus << endl;
 }

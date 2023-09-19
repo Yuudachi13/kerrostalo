@@ -10,12 +10,14 @@ public:
     Kerrostalo();
     ~Kerrostalo();
     double laskeKulutus(double);
+    void maaritaKokoVitunKerros();
 
 private:
 
     Katutaso eka;
-    Kerros kolmas;
     Kerros toka;
+    Kerros kolmas;
+
 };
 
 #endif // KERROSTALO_H
