@@ -27,5 +27,4 @@ double Asunto::laskeKulutus(double hinta)
     double Kulutus = asukasMaara * neliot * hinto;
     cout <<"asunnon kulutus, kun hinta = " << hinto << " on " << Kulutus << endl;
 
-
 }

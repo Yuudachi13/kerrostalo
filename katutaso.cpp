@@ -18,7 +18,7 @@ void Katutaso::maaritaAsunnot(int maara)
 
     as1.maarita(2,100);
     as2.maarita(2,100);
-
+    cout <<"maaritetaan katutason kerrokselta perittyja asuntoja"<< endl;
     Kerros::maaritaAsunnot2(4);
 }
 
