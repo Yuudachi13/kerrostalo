@@ -26,7 +26,7 @@ void Kerrostalo::maaritaKokoVitunKerros()
 double Kerrostalo::laskeKulutus(double)
 {
 
-    int kerrostaloAsuntojenmaara = eka.asuntomaara + toka.asuntomaara2 + kolmas.asuntomaara2;
+    int kerrostaloAsuntojenmaara = eka.asuntomaara + toka.asuntomaara2 + kolmas.asuntomaara2 + eka.asuntomaara2;
     int kerrosTaloKulutus = kerrostaloAsuntojenmaara * eka.as1.neliot * eka.as1.asukasMaara;
     cout <<"kerros talon kulutus, ="<< kerrosTaloKulutus<< endl;
 

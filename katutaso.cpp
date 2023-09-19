@@ -19,6 +19,7 @@ void Katutaso::maaritaAsunnot(int maara)
     as1.maarita(2,100);
     as2.maarita(2,100);
 
+    Kerros::maaritaAsunnot2(4);
 }
 
 double Katutaso::laskeKulutus1(double)
