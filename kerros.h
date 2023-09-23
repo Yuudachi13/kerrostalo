@@ -9,11 +9,11 @@ public:
 
     ~Kerros();
 
-   virtual void maaritaAsunnot2(int);
+   virtual void maaritaAsunnot();
 
-    double laskeKulutus2(double);
+    double laskeKulutus(double);
 
-    int asuntomaara2;
+
 
     Asunto as1;
     Asunto as2;

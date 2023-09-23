@@ -10,22 +10,22 @@ Katutaso::~Katutaso()
     cout <<"katutaso tuhottu"<< endl;
 }
 
-void Katutaso::maaritaAsunnot(int maara)
+void Katutaso::maaritaAsunnot()
 {
 
-    asuntomaara = maara;
-    cout <<"maaritetaan "<< maara <<" klp katutason asuntoja"<< endl;
+
+    cout <<"maaritetaan 2 klp katutason asuntoja"<< endl;
 
     as1.maarita(2,100);
     as2.maarita(2,100);
     cout <<"maaritetaan katutason kerrokselta perittyja asuntoja"<< endl;
-    Kerros::maaritaAsunnot2(4);
+    Kerros::maaritaAsunnot();
 }
 
-double Katutaso::laskeKulutus1(double)
+double Katutaso::laskeKulutus(double hinta)
 {
 
-  int asunnot = asuntomaara2 + asuntomaara;
-  int kokonaiskulutus = asunnot * as1.neliot * as1.asukasMaara;
-    cout <<"katutason ja perityn kerroksen kulutus " << kokonaiskulutus << endl;
+    double kulutus = hinta * (as1.asukasMaara * as1.neliot) + (as2.asukasMaara * as2.neliot) + (Kerros::as1.asukasMaara * Kerros::as1.neliot) + (Kerros::as2.asukasMaara * Kerros::as2.neliot) + (Kerros::as3.asukasMaara * Kerros::as3.neliot) + (Kerros::as4.asukasMaara * Kerros::as4.neliot);
+
+    return kulutus;
 }

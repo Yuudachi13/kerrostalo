@@ -9,11 +9,9 @@ public:
 
    ~Katutaso();
 
-   void maaritaAsunnot(int);
+   void maaritaAsunnot() override;
 
-   double laskeKulutus1(double);
-
-   int asuntomaara;
+   double laskeKulutus(double);
 
 
    Asunto as1;

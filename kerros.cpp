@@ -8,11 +8,11 @@ Kerros::~Kerros()
     cout <<"kerros tuhottu"<< endl;
 }
 
-void Kerros::maaritaAsunnot2(int asuntoja)
+void Kerros::maaritaAsunnot()
 {
-    asuntomaara2 = asuntoja;
 
-    cout <<"maaritetaan " << asuntomaara2 << " kpl kerroksen asuntoja " <<  endl;
+
+    cout <<"maaritetaan 4 kpl kerroksen asuntoja " <<  endl;
     as1.maarita(2,100);
     as2.maarita(2,100);
     as3.maarita(2,100);
@@ -21,13 +21,13 @@ void Kerros::maaritaAsunnot2(int asuntoja)
 
 
 
-double Kerros::laskeKulutus2(double)
+double Kerros::laskeKulutus(double hinta)
 {
-    int asunnot2 = asuntomaara2;
 
-    int kokonaiskulutus2 = asunnot2 * as1.neliot * as1.asukasMaara;
 
-    cout << "kerroksen kulutus " << kokonaiskulutus2 << endl;
+    double kulutus = hinta * (as1.asukasMaara * as1.neliot) + (as2.asukasMaara * as2.neliot) + (as3.asukasMaara * as3.neliot) + (as4.asukasMaara * as4.neliot);
+
+   return kulutus;
 
 
 }

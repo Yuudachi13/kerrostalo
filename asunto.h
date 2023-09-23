@@ -7,18 +7,13 @@ class Asunto
 {
 public:
     Asunto();
-
    ~Asunto();
 
    void maarita(int, int);
-
    double laskeKulutus(double);
 
    int asukasMaara;
-
    int neliot;
-
-   int hinto;
 
 
 

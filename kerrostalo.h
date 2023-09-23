@@ -10,7 +10,6 @@ public:
     Kerrostalo();
     ~Kerrostalo();
     double laskeKulutus(double);
-    void maaritaKokoVitunKerros();
 
 private:
 
