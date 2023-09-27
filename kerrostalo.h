@@ -13,9 +13,9 @@ public:
 
 private:
 
-    Katutaso eka;
-    Kerros toka;
-    Kerros kolmas;
+    Katutaso* eka = new Katutaso();
+    Kerros* toka = new Kerros();
+    Kerros* kolmas = new Kerros();
 
 };
 

@@ -15,10 +15,10 @@ public:
 
 
 
-    Asunto as1;
-    Asunto as2;
-    Asunto as3;
-    Asunto as4;
+    Asunto* as1 = new Asunto();
+    Asunto* as2 = new Asunto();
+    Asunto* as3 = new Asunto();
+    Asunto* as4 = new Asunto();
 
 };
 
